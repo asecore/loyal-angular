@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='main.js'></script>
+    <style>
+        .container{
+            width: 100px;
+            padding: 20px;
+            height: 100px;
+            border:5px solid red;
+            margin: 10px 5px 15px 2px;
+            display: inline-block;
+            box-sizing: content-box;
+        }
+        /*Selector universal aplica estilos globales, aplica a todos los elementos*/
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        /*Herencia*/
+        .contenedor_texto #contenedor_caja p{
+            color: blue;
+        }
+       .lista li:first-child{
+        color: blueviolet !important; /*Hacemos important para que no predomine el estilo de los pares/impares */
+        font-size: 26px;
+       }
+       .lista li:last-child{
+        color:  blueviolet !important;
+        font-size: 26px;
+       }
+       /*aplicar a los pares*/
+       .lista li:nth-child(even){
+        color: red;
+       }
+       .lista li:nth-child(odd){
+        color: green;
+       }
+       .lista-hermanos > li > a {
+        font-size: 2rem;
+       }
+    </style>
+</head>
+<body>
+    <section >
+        <h2>Modelo de caja</h2>
+        <div class="container">Clase2</div>
+        <div class="container">Clase22</div>
+    </section>
+    <section class="contenedor_texto">
+        <p>texto bla bla</p>
+        <div id="contenedor_caja">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum explicabo repellat, corporis ad ab consequuntur ratione dignissimos natus minima aliquid non, vel, consectetur possimus officia quidem nostrum tempore error!</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi provident dignissimos eveniet totam officia doloribus quibusdam odit repellendus, consequatur quo veritatis laudantium, accusantium animi est tempore id rerum impedit.</p>
+    </section>
+    <section>
+        <ul class="lista">
+            <li>link1</li>
+            <li>link2</li>
+            <li>link3</li>
+            <li>link4</li>
+            <li>link5</li>
+            <li>link6</li>
+            <li>link7</li>
+        </ul>
+    </section>
+    <hr>
+    <section>
+        <ul class="lista-hermanos">
+            <li><a>link1</a></li>
+            <li>link2</li>
+            <li>link3</li>
+            <li>link4</li>
+            <li>link5</li>
+            <li>link6</li>
+            <li>link7</li>
+        </ul>
+    </section>
+</body>
+</html>

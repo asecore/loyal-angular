@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head >
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <main>
+        <header>
+            <!--elementos de menu-->
+            <nav>
+                <li>
+                    <a href="index.html">volver</a>
+                </li>
+            </nav>
+        </header>
+        <section>
+            <fieldset>
+            <h2>Formularios</h2>
+            <form action="endpoint.html" method="get">
+                <label>Username</label>
+                <input type="text" name="username" id="username">
+                <label>Password</label>
+                <input type="password" name="password" id="password">
+                <label>Rango de edad</label>
+                <input type="number" step="5" min="0" max="15" required>
+                <label>Equipo de futbol</label>
+                <select required>
+                    <option>ARG</option>
+                    <option>BRA</option>
+                    <option>ESP</option>
+                </select>
+                <label>Turno</label>
+                Mañana<input type="checkbox" value="M" name="manana">
+                Noche<input type="checkbox" value="N" name="noche">
+                <br>
+                <label>Es de river?</label>
+                SI<input type="radio" value="Si" name="esderiver">
+                NO<input type="radio" value="No" name="esderiver">
+                <button type="submit">
+                    Enviar
+                </button>
+            </form>
+            <article></article>
+        </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Tablas</legend>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>
+                                Col1
+                            </th>
+                            <th>
+                                Col2
+                            </th>
+                            <th>
+                                Col3
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                fila1 col1
+                            </td>
+                            <td>
+                                fila1 col2
+                            </td>
+                            <td>
+                                fila1 col3
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                fila2 col1
+                            </td>
+                            <td>
+                                fila2 col2
+                            </td>
+                            <td>
+                                fila2 col3
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                              columna expandida
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <button>Eliminar</button>
+                                <a href="#">Editar</a>
+                                <img width="50" height="50" src="Captura.JPG">
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </section>
+        
+        <!--Puedo tener varios section-->
+        <aside>
+            <!--publicidad-->
+        </aside>
+       </main>
+       <footer>
+        <!--pie de pagina-->
+       </footer>
+    </body>
+</html>
